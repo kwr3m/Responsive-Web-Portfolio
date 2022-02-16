@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <svg id='arrow' fill='grey' xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M24 24H0V0h24v24z" fill="none" opacity=".87"/><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z"/></svg>
+    <div class="slide">
+        <div class="container">
+            <main>
+                <div class="main">
+                    <div class="menu">
+                        <div class="logo"><img src="pc.png"></div>
+                        <div class="sections">
+                            <ul>
+                                <li><a href="#about">Skills</a></li>
+                                <li><a href="#sld">Portfolio</a></li>
+                                <li><a href="#cnct">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="contact">Fiverr</div>
+                    </div>
+                </div>
+        
+                <section id="personal">
+                    <div class="context">
+                        <p>Hi I'm</p>
+                        <h1>Sheila<br>WRIGHT</h1>
+                        <p>I'm professional <b>UI/UX</b> designer<br>with front-end<br>development skills in USA</p>
+                    </div>
+                    <img src="portrait.png" alt="">
+                </section>
+            </main>
+            <div class="bg">
+                <div class="bubble"></div>
+                <div class="bubble2"></div>
+            </div>
+        </div>
+        <nav class="about" id="about">
+            <div class="port">
+                <div class="port1">
+                    <div class="image"><img src="web.jpg" alt=""></div>
+                    <div class="text">Working on web development</div>
+                </div>
+                <div class="port1">
+                    <div class="text">Experience with game engines</div>
+                    <div class="image"><img src="game.jpg" alt=""></div>
+                </div>
+                <div class="port1">
+                    <div class="image"><img src="data.png" alt=""></div>
+                    <div class="text">Degree on data science</div>
+                </div>
+            </div>
+        </nav>
+        <nav class="sld" id="sld">
+            <div class="slider">
+                <span class="visible"><img src="data.png" alt=""></span>
+                <span class="hidden"><img src="game.jpg" alt=""></span>
+                <span class="hidden"><img src="https://ichef.bbci.co.uk/news/800/cpsprodpb/1AAB/production/_103772860_google1.jpg.webp" alt=""></span>
+                <span class="hidden"><img src="web.jpg" alt=""></span>
+                <svg id='right' fill="white" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6-6-6z"/></svg>
+                <svg id='left' fill="white" border="black" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12l4.58-4.59z"/></svg>
+            </div>
+        </nav>
+        
+        
+        <nav class="about" id="delete">
+            <div class="contacttxt">
+                <h1>It's nice to meet ya</h1>
+                <p>Let’s get to know each other. For general enquiries, fill out the form to get in touch. Alternatively, if you know your project details - head over to our project planner.</p>
+            </div>
+
+            <div class="form" id="cnct">
+                <form action="mailto:kerem@protonmail.com" method="get" enctype="text/plain">
+                    <div>
+                      <label for="name">Name:
+                        <input type="text" name="name" id="name" />
+                      </label>
+                    </div>
+                    <div>
+                      <label for="email">Email:
+                        <input type="text" name="email" id="email" />
+                      </label>
+                    </div>
+                    <div>
+                      <textarea name="comments" rows="12" cols="35">Send your comments to us.</textarea>
+                    </div>
+                    <div id="buttons">
+                      <input type="submit" name="submit" id="submit" value="Send" />
+                      <input type="reset" name="reset" id="reset" value="Clear" />
+                    </div>
+                  </form>
+            </div>
+        </nav>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
